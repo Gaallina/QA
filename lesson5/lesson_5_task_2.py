@@ -11,8 +11,6 @@ options.add_argument('--ignore-ssl-errors=yes')
 options.add_argument('--ignore-certificate-errors')
 
 driver = webdriver.Chrome(options=options)
-driver = webdriver.Chrome(service=ChromeService(
-    ChromeDriverManager().install()))
 driver.maximize_window()
 
 
