@@ -13,8 +13,8 @@ try:
     ff.get("http://the-internet.herokuapp.com/entry_ad")
     wait = WebDriverWait(ff, 10)
     close_button = wait.until(EC.element_to_be_clickable(
-        ff.find_element(By.CSS_SELECTOR, "div.modal-footer")))
-    close_button.click()
+        (By.CSS_SELECTOR, "div.modal-footer"))).click
+    
     sleep(3)
 
 except Exception as ex:
