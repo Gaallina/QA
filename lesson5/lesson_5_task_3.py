@@ -15,7 +15,7 @@ try:
     for a in range(3):
         driver.get("http://uitestingplayground.com/classattr")
         b_b = driver.find_element(
-            'xpath', "//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]")
+            By.XPATH, "//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]")
         b_b.click()
         sleep(5)
         driver.switch_to.alert.accept()
